@@ -17,7 +17,7 @@ public abstract class Animal
     @Override
     public String toString()
     {
-        return "Here is information about this animal  \nIt usually dies at age: " + yearsToLive + "\nIt has this size parameters: " + size;
+        return "Here is information about this animal  \nIt usually dies at age: " + yearsToLive + "\nIt has this color: " + color + "\nIt has this size parameters: " + size;
     }
 
 }
