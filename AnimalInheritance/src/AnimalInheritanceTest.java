@@ -19,6 +19,7 @@ public class AnimalInheritanceTest
         for (Animal a: zoo)
         {
             System.out.println(a);
+            System.out.println();
         }
 
 

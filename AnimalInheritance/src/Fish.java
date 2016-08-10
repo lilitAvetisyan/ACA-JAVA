@@ -3,25 +3,22 @@
  */
 public class Fish extends Animal
 {
-    private String color;
     private String areal; // should be either river or sea
 
-    public Fish(int yearsToLive, Size size)
+    public Fish(int yearsToLive, Size size, String color)
     {
-        super( yearsToLive, size);
-        this.color = "Grey";
+        super( yearsToLive, size, color);
         this.areal = "Sea";
     }
-    public Fish(int yearsToLive, Size size, String color,String areal)
+    public Fish(int yearsToLive, Size size, String color, String areal)
     {
-        super( yearsToLive, size);
-        this.color = color;
+        super( yearsToLive, size, color);
         this.areal = areal;
     }
     @Override
     public String toString()
     {
-        return super.toString() + "\nFish\ncolor: " + color + "\nLives in sea or river " + areal;
+        return super.toString() + "\nFish" + "\nLives in sea or river: " + areal;
     }
 
 

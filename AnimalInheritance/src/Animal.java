@@ -3,19 +3,21 @@ public abstract class Animal
 {
     //    private boolean isAPet;
     private int yearsToLive;
+    private String color;
     private Size size;
 
-    public Animal( int yearsToLive, Size size)
+    public Animal( int yearsToLive, Size size, String color)
     {
         this.yearsToLive = yearsToLive;
         this.size = size;
+        this.color = color;
     }
 //    public abstract void voice();
 
     @Override
     public String toString()
     {
-        return "Animal  \nUsually dies at age: " + yearsToLive + "\nhas this size parameters: " + size;
+        return "Here is information about this animal  \nIt usually dies at age: " + yearsToLive + "\nIt has this size parameters: " + size;
     }
 
 }

@@ -9,7 +9,6 @@ public class Size {
 
     public Size(int weight, int height, int lenght)
     {
-        super();
         this.weight = weight;
         this.height = height;
         this.lenght = lenght;

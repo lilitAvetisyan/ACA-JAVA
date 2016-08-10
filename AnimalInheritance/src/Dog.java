@@ -4,35 +4,32 @@
  */
 public class Dog extends Animal
 {
-    private String color;
     private String sound;
     private boolean livesAtHome;
 
-    public Dog(int yearsToLive, Size size, boolean livesAtHome)
+    public Dog(int yearsToLive, Size size, String color)
     {
-        super( yearsToLive, size);
-        this.color = "Brown";
+        super( yearsToLive, size, color);
         this.sound = "Woof!";
         this.livesAtHome = true;
 
     }
     public Dog(int yearsToLive, Size size, String color, String sound, boolean livesAtHome)
     {
-        super( yearsToLive, size);
-        this.color = color;
+        super( yearsToLive, size, color);
         this.sound = sound;
         this.livesAtHome = livesAtHome;
 
     }
 
-    public void voice()
-    {
-        System.out.println("Woof!");
-    }
+//    public void voice()
+//    {
+//        System.out.println("Woof!");
+//    }
 
     @Override
     public String toString()
     {
-        return super.toString() + "\nDog\ncolor: " + color + "\nmakes this sound: " + sound + "\nlives at home: " + livesAtHome;
+        return super.toString() + "\nDog"+ "\nmakes this sound: " + sound + "\nlives at home: " + livesAtHome;
     }
 }
