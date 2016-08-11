@@ -24,4 +24,15 @@ public class Circle extends Shape {
         // P = 2πr
         return 2 * pi * radius;
     }
+
+    @Override
+    public int compareTo(Shape o)
+    {
+        if (o.area() == area())
+            return 0;
+        else if (o.area() > area())
+            return 1;
+        else
+            return -1;
+    }
 }

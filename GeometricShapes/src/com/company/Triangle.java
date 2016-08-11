@@ -27,4 +27,15 @@ public class Triangle extends Shape {
         // P = a + b + c
         return a + b + c;
     }
+
+    @Override
+    public int compareTo(Shape o)
+    {
+        if (o.area() == area())
+            return 0;
+        else if (o.area() > area())
+            return 1;
+        else
+            return -1;
+    }
 }

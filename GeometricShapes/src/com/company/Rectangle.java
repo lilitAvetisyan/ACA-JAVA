@@ -3,7 +3,7 @@ package com.company;
 /**
  * Created by Lill on 8/5/16.
  */
-public class Rectangle extends Shape {
+public class Rectangle extends Shape  {
 
     private final double width, length; //sides
 
@@ -25,5 +25,16 @@ public class Rectangle extends Shape {
     public double perimeter() {
         // P = 2(w + l)
         return 2 * (width + length);
+    }
+
+    @Override
+    public int compareTo(Shape o)
+    {
+        if (o.area() == area())
+            return 0;
+        else if (o.area() > area())
+            return 1;
+        else
+            return -1;
     }
 }
