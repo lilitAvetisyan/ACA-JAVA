@@ -12,13 +12,20 @@ public class MusicAppRunner extends MusicApplication {
     {
 
         MusicApplication app = new MusicAppRunner();
+
         Song song1 = new Song();
         Artist artist1 = new Artist();
         artist1.setArtistName("The Doors");
+
         Song song2 = new Song("People are strange", artist1, 2, "excellent");
-        Artist artist2 = new Artist();
-        artist2.setArtistName("Poets Of the fall");
-        Song song3 = new Song("Sleep",artist2, 4, "great");
+
+        Artist artist3 = new Artist();
+        artist3.setArtistName("Poets Of the fall");
+        Song song3 = new Song("Sleep",artist3, 4, "great");
+
+
+        AlbumContainer album = new AlbumContainer();
+        PlaylistContainer playlist = new PlaylistContainer();
 
         app.openApplication();
 
@@ -26,17 +33,12 @@ public class MusicAppRunner extends MusicApplication {
         app.addSong(song2);
         app.addSong(song3);
 
-        List<Song> playlist = new ArrayList<>();
-        List<Song> album = new ArrayList<>();
+        playlist.addSongToPlaylist(song1, playlist.playlistSongs);
 
-        playlist.add(song1);
-        app.addSongToPlaylist(song2, playlist);
+        album.albumSongs.add(song1);
+        album.albumSongs.add(song2);
 
-        album.add(song1);
-        album.add(song2);
-
-        app.createNewPlaylist(playlist);
-        app.importAlbum(album, "The doors");
+        album.importAlbum(album.albumSongs, "The doors");
 
         app.closeApplication();
 
