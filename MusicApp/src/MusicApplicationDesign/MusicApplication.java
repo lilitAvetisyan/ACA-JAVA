@@ -32,6 +32,7 @@ public  class MusicApplication implements Openable {
         albumsNum++;
         songsNumber += newAlbum.size();
         System.out.println("new Album is created");
+        System.out.println();
 
     }
     void addSongToPlaylist(Song song, List<Song> playlist)
@@ -40,6 +41,7 @@ public  class MusicApplication implements Openable {
         playlist.add(song);
         playlistSongsNumber++;
         System.out.println("The song is added to the playlist");
+        System.out.println();
 
 
     }
@@ -51,18 +53,24 @@ public  class MusicApplication implements Openable {
             newPlaylist.add(s);
         }
         System.out.println("New playlist is created");
+        System.out.println();
+
     }
     void addSong(Song song)
     {
         allSongs.add(song);
         songsNumber++;
         System.out.println("The song " + song.getSongName() + " is added");
+        System.out.println();
+
     }
 
     @Override
     public void openApplication() {
         isRunning = true;
         System.out.println("Application is opened!!!");
+        System.out.println();
+
 
     }
 
@@ -70,6 +78,8 @@ public  class MusicApplication implements Openable {
     public void closeApplication() {
         isRunning = false;
         System.out.println("Closing the application");
+        System.out.println();
+
 
     }
 }

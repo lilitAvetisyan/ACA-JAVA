@@ -20,6 +20,8 @@ public class MusicAppRunner extends MusicApplication {
         artist2.setArtistName("Poets Of the fall");
         Song song3 = new Song("Sleep",artist2, 4, "great");
 
+        app.openApplication();
+
         app.addSong(song1);
         app.addSong(song2);
         app.addSong(song3);
@@ -28,12 +30,17 @@ public class MusicAppRunner extends MusicApplication {
         List<Song> album = new ArrayList<>();
 
         playlist.add(song1);
+        app.addSongToPlaylist(song2, playlist);
 
         album.add(song1);
         album.add(song2);
 
         app.createNewPlaylist(playlist);
         app.importAlbum(album, "The doors");
+
+        app.closeApplication();
+
+        System.out.println(app.songsNumber);
 
     }
 }
