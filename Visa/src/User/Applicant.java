@@ -1,6 +1,7 @@
 package User;
 
 import VIsaApplicationTypes.ApplicationFee;
+import VIsaApplicationTypes.VisaApplication;
 
 import java.util.Calendar;
 import java.util.UUID;
@@ -17,6 +18,7 @@ public class Applicant {
     ApplicationFee fee;
     public Calendar dateApplied;
 
+
     public Applicant(UUID passportNumber, Calendar passportExpirationDate, String fullName, Calendar dateApplied)
     {
         this.passportNumber = passportNumber;
@@ -28,10 +30,7 @@ public class Applicant {
     public boolean isEligable()
     {
         if (fee.isPaid())
-        {
             return true;
-
-        }
         else
             return false;
     }

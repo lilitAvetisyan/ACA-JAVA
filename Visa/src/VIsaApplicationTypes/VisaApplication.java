@@ -12,6 +12,7 @@ public class VisaApplication {
     protected ApplicationFee fee;
 
 
+
     public Applicant getApplicant() {
         return applicant;
     }
