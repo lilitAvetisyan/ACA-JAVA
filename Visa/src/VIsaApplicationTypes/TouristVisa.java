@@ -8,6 +8,12 @@ public class TouristVisa extends VisaApplication {
     private String placeToStay;
     private int durationDays;
 
+    public TouristVisa(String placeToStay, int durationDays)
+    {
+        this.placeToStay = placeToStay;
+        this.durationDays = durationDays;
+    }
+
     public void payFee()
     {
         fee.setIsPaid(true);

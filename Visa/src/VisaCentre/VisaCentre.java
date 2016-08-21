@@ -8,17 +8,16 @@ import java.util.Calendar;
 /**
  * Created by Lill on 8/21/16.
  */
-public class VisaCentre  {
+public class VisaCentre implements VisaCentreInterface {
 
 public static final int proccesdureTime = 10;
 
-    boolean grantVisa( VisaApplication visaApplication)
+    public boolean applyToVisa(VisaApplication visaApplication)
     {
 
-        //TODO implement whether the user gets visa or no
-
        if (checkApplicationDeadline(visaApplication))
-       {
+//       if (true)
+        {
             if (visaApplication.getApplicant().isEligable())
             {
                 System.out.println("Fee is paid.\n");

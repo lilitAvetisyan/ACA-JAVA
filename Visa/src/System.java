@@ -2,7 +2,7 @@
  * Created by Lill on 8/21/16.
  */
 
-import TourInfo.*;
+//import TourInfo.*;
 import User.*;
 import VIsaApplicationTypes.*;
 import VisaCentre.*;
@@ -23,7 +23,11 @@ public class System {
 
         VisaCentre centre = new VisaCentre();
         Applicant applicant = new Applicant(id1, c1, "Jon Smith", c2);
-        
+
+        TouristVisa touristVisa = new TouristVisa("Alicante", 14);
+
+        centre.applyToVisa(touristVisa);
+
 
     }
 }
