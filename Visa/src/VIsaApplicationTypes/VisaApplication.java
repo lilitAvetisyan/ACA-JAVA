@@ -9,6 +9,7 @@ import User.Applicant;
 public class VisaApplication {
     protected  Applicant applicant;
     protected Trip tripInfo;
+    protected ApplicationFee fee;
 
 
     public Applicant getApplicant() {

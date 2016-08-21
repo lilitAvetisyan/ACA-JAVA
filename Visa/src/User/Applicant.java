@@ -30,10 +30,13 @@ public class Applicant {
         if (fee.isPaid())
         {
             return true;
+
         }
         else
             return false;
     }
+
+
     public String getFullName() {
         return fullName;
     }
@@ -50,5 +53,7 @@ public class Applicant {
     public String getPurpose() {
         return purpose;
     }
+
+
 
 }

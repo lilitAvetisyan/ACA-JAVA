@@ -8,6 +8,13 @@ public class ImmigrantVisa extends VisaApplication {
     public static   int immigrantVisaPrice = 500;
     private String permanentPlaceToLive;
 
+    public void payFee()
+    {
+        fee.setIsPaid(true);
+
+    }
+
+
     public String getPermanentPlaceToLive() {
         return permanentPlaceToLive;
     }
