@@ -11,7 +11,6 @@ public abstract class Shape implements Comparable<Shape>
     public abstract double area();
     public abstract double perimeter();
 
-
     public static void main(String[] args)
     {
 
