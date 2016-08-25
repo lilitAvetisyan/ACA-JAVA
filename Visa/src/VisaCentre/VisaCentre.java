@@ -10,7 +10,7 @@ import java.util.Calendar;
  */
 public class VisaCentre implements VisaCentreInterface {
 
-public static final int proccesdureTime = 10;
+public static final int procedureTime = 10;
 
     public boolean applyToVisa(VisaApplication visaApplication)
     {
@@ -42,7 +42,7 @@ public static final int proccesdureTime = 10;
 
         Calendar c1 = visaApplication.getTripInfo().getFlightDate().getInstance();
         Calendar c2 = visaApplication.getApplicant().dateApplied.getInstance();
-        c2.add(Calendar.DAY_OF_MONTH, proccesdureTime);
+        c2.add(Calendar.DAY_OF_MONTH, procedureTime);
         if (c1.compareTo(c2) > 0)
         {
             return true;

@@ -6,6 +6,10 @@ import java.util.Calendar;
  * Created by Lill on 8/21/16.
  */
 public class Trip {
+    public void setFlightDate(Calendar flightDate) {
+        this.flightDate = flightDate;
+    }
+
     Calendar flightDate;
     String country;
 

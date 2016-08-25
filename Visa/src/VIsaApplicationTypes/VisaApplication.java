@@ -11,6 +11,20 @@ public class VisaApplication {
     protected Trip tripInfo;
     protected ApplicationFee fee;
 
+    public void setApplicant(Applicant applicant) {
+        this.applicant = applicant;
+    }
+
+    public void setFee(ApplicationFee fee) {
+        this.fee = fee;
+    }
+
+    public void setTripInfo(Trip tripInfo) {
+        this.tripInfo = tripInfo;
+    }
+
+
+
 
 
     public Applicant getApplicant() {
