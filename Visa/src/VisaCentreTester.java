@@ -30,13 +30,17 @@ public class VisaCentreTester {
         ApplicationFee fee = new ApplicationFee(200);
         fee.setIsPaid(true);
 
-        VisaApplication visaApplication = new VisaApplication();
-        visaApplication.setApplicant(applicant);
-        visaApplication.setFee(fee);
-        visaApplication.setTripInfo(trip);
+//        VisaApplication visaApplication = new VisaApplication();
+//        visaApplication.setApplicant(applicant);
+//        visaApplication.setFee(fee);
+//        visaApplication.setTripInfo(trip);
 
 
         TouristVisa touristVisa = new TouristVisa("Alicante", 14);
+
+        touristVisa.setApplicant(applicant);
+        touristVisa.setFee(fee);
+        touristVisa.setTripInfo(trip);
 
         centre.applyToVisa(touristVisa);
 
