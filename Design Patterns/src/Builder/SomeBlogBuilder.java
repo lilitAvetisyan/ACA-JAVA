@@ -3,7 +3,7 @@ package Builder;
 /**
  * Created by Lill on 9/27/16.
  */
-public class SomeBlogBuilder implements BlogBuilder {
+public class SomeBlogBuilder extends Blog implements BlogBuilder {
 
     private Blog blog;
 
@@ -45,6 +45,7 @@ public class SomeBlogBuilder implements BlogBuilder {
 
     @Override
     public void validateBlog() {
+
     }
 
     @Override
