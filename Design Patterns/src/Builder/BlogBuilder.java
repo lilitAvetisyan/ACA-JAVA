@@ -13,6 +13,6 @@ interface BlogBuilder {
     BlogBuilder addMiddleSection(String section);
 
     void validateBlog();
-    SomeBlogBuilder buildBlog();
+    Blog buildBlog();
 
 }
